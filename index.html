@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jennifer's Handmade Bracelets</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px;
+      margin: 0;
+    }
+
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      max-width: 600px;
+      overflow-y: auto;
+      max-height: 95vh;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      margin-top: 0;
+    }
+
+    .profile {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .bracelet-box {
+      text-align: center;
+      max-width: 150px;
+    }
+
+    .bracelet-box img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: sparkle 3s infinite;
+    }
+
+    .bracelet-box img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    }
+
+    .bracelet-box span {
+      display: block;
+      margin-top: 8px;
+      font-weight: bold;
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { filter: brightness(1); }
+      50% { filter: brightness(1.08); }
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 20px;
+      background-color: #6c63ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #574fd6;
+    }
+
+    /* About Section */
+    .about-section {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      color: #333;
+    }
+
+    .about-section p {
+      color: #555;
+      margin-top: 10px;
+      line-height: 1.5;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      margin: 10px;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 1em;
+    }
+
+    .contact-form button {
+      padding: 12px 20px;
+      background-color: #6c63ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #574fd6;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hello again!</h1>
+    <p>Hi! I'm Jennifer. I love creating handmade bracelets using colorful beads and unique designs. Every piece is made with love and care. ✨💫</p>
+    
+    <img src="Jennifer.jpg" alt="Jennifer's Picture" class="profile">
+
+    <div class="gallery">
+      <div class="bracelet-box">
+        <img src="bracelet1.jpg" alt="Bracelet 1">
+        <span>Lavender Twist</span>
+      </div>
+      <div class="bracelet-box">
+        <img src="bracelet2.jpg" alt="Bracelet 2">
+        <span>Golden Vine</span>
+      </div>
+      <div class="bracelet-box">
+        <img src="bracelet3.jpg" alt="Bracelet 3">
+        <span>Autumn Spark</span>
+      </div>
+      <div class="bracelet-box">
+        <img src="bracelet4.jpg" alt="Bracelet 4">
+        <span>Ocean Bloom</span>
+      </div>
+      <div class="bracelet-box">
+        <img src="bracelet5.jpg" alt="Bracelet 5">
+        <span>Midnight Copper</span>
+      </div>
+    </div>
+
+    <a href="more.html" class="btn">See More</a>
+  </div>
+
+  <!-- More About Me Section -->
+  <div class="about-section">
+    <h2>More About Me</h2>
+    <p>
+      I've been making bracelets for several years, finding joy in crafting something unique and personal for each customer. I believe jewelry is not just about style, but about expressing individuality and creativity. I use high-quality beads and materials, carefully selecting them to make sure each piece is both beautiful and durable. Thank you for supporting my small business!
+    </p>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact-form">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mdkewjkn" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+  </div>
+</body>
+</html>
