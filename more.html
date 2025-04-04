@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>More Bracelets</title>
+  <style>
+    body {
+      background-color: #f8f8ff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #4a4a4a;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #666;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .bracelet-box {
+      text-align: center;
+      max-width: 150px;
+    }
+
+    .bracelet-box img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: sparkle 3s infinite;
+    }
+
+    .bracelet-box img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    }
+
+    .bracelet-box span {
+      display: block;
+      margin-top: 8px;
+      font-weight: bold;
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { filter: brightness(1); }
+      50% { filter: brightness(1.08); }
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #6c63ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .btn-back:hover {
+      background-color: #574fd6;
+    }
+  </style>
+</head>
+<body>
+  <h1>More Bracelets Coming Soon!</h1>
+  <p>I'm working on uploading more beautiful bracelet designs. Check back soon! </p>
+
+  <div class="gallery">
+    <!-- Added new bracelets -->
+    <div class="bracelet-box">
+      <img src="bracelet6.jpg" alt="Bracelet 6">
+      <span>Sunset Bliss</span>
+    </div>
+    <div class="bracelet-box">
+      <img src="bracelet7.jpg" alt="Bracelet 7">
+      <span>Emerald Waves</span>
+    </div>
+    <div class="bracelet-box">
+      <img src="bracelet8.jpg" alt="Bracelet 8">
+      <span>Crimson Dream</span>
+    </div>
+  </div>
+
+ <a href="index.html" class="btn-back"> Back to Home</a>
+</body>
+</html>
