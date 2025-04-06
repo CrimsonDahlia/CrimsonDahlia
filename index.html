@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crimson Dahlia</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Ensure full height for the gradient */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Libre Baskerville', serif; /* Default body font */
+        }
+
+        /* Single container for the entire page */
+        .page-container {
+            background-color: white; /* Plain white background */
+            min-height: 100vh; /* Full viewport height, grows with content */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Header styling */
+        header {
+            color: #5c1f2d;
+            padding: 2rem;
+            text-align: center;
+            width: 100%;
+            font-family: 'Bodoni Moda', serif; /* Title font */
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        /* Main content styling */
+        .content {
+            width: 100%;
+            max-width: 1200px; /* Limits content width */
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Image gallery */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 2rem 0;
+        }
+
+        .image-gallery img {
+            width: 220px;
+            height: auto;
+            margin: 1rem;
+            object-fit: cover;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(167, 42, 58, 0.6);
+        }
+
+        /* About Me Section */
+        .about-me {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 2px solid #a72a3a;
+        }
+
+        .about-me h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #a72a3a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Bodoni Moda', serif;
+        }
+
+        .about-me p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 500px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 2px solid #a72a3a;
+        }
+
+        .contact-form h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #a72a3a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Bodoni Moda', serif;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            border: 2px solid #ccc;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #a72a3a;
+            box-shadow: 0 0 8px rgba(167, 42, 58, 0.7);
+            outline: none;
+        }
+
+        .contact-form textarea {
+            min-height: 150px;
+            resize: none;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .contact-form button {
+            background-color: #a72a3a;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #871e2c;
+            transform: translateY(-2px);
+        }
+
+        .contact-form button:active {
+            transform: translateY(1px);
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            padding: 2rem;
+            text-align: center;
+            color: #5c1f2d;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <h1>Welcome to Crimson Dahlia</h1>
+        </header>
+
+        <div class="content">
+            <p>Welcome to our beautiful space dedicated to unique and creative designs.</p>
+            <p>Feel free to explore!</p>
+            <a href="#">Learn More</a>
+
+            <!-- Image Gallery -->
+            <div class="image-gallery">
+                <a href="bracelet1.html"><img src="images/bracelet1.jpg" alt="Bracelet 1"></a>
+                <a href="bracelet2.html"><img src="images/bracelet2.jpg" alt="Bracelet 2"></a>
+                <a href="bracelet3.html"><img src="images/bracelet3.jpg" alt="Bracelet 3"></a>
+                <a href="bracelet4.html"><img src="images/bracelet4.jpg" alt="Bracelet 4"></a>
+                <a href="bracelet5.html"><img src="images/bracelet5.jpg" alt="Bracelet 5"></a>
+                <a href="bracelet6.html"><img src="images/bracelet6.jpg" alt="Bracelet 6"></a>
+                <a href="bracelet7.html"><img src="images/bracelet7.jpg" alt="Bracelet 7"></a>
+                <a href="bracelet8.html"><img src="images/bracelet8.jpg" alt="Bracelet 8"></a>
+            </div>
+
+            <!-- About Me -->
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>Hi! I'm Jennifer, the creator behind Crimson Dahlia. I design and craft unique, one-of-a-kind handmade bracelets with passion and care. My inspiration comes from nature, art, and the beauty of combining colors and materials. I hope you enjoy exploring my designs!</p>
+            </section>
+
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/mdkewjkn" method="POST" class="contact-form">
+                <h2>Contact Me</h2>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>© 2025 Crimson Dahlia. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
