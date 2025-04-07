@@ -172,6 +172,25 @@
             text-align: center;
             color: #5c1f2d;
         }
+
+        /* Style Assistant Button */
+        .style-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem 2rem;
+            background-color: #a72a3a;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .style-button:hover {
+            background-color: #871e2c;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -197,6 +216,32 @@
                 <a href="bracelet8.html"><img src="images/bracelet8.jpg" alt="Bracelet 8"></a>
             </div>
 
+            <!-- Bracelet Style Assistant -->
+            <section class="contact-form">
+                <h2>Style Assistant</h2>
+                <p>Find the perfect bracelet based on your style preferences:</p>
+                <form id="braceletForm">
+                    <label for="color">Choose a Color:</label><br>
+                    <select id="color" required>
+                        <option value="">-- Select Color --</option>
+                        <option value="gold">Gold</option>
+                        <option value="silver">Silver</option>
+                        <option value="earthy">Earthy Tones</option>
+                    </select><br><br>
+
+                    <label for="occasion">Select Occasion:</label><br>
+                    <select id="occasion" required>
+                        <option value="">-- Select Occasion --</option>
+                        <option value="casual">Casual</option>
+                        <option value="formal">Formal</option>
+                        <option value="gift">Gift</option>
+                    </select><br><br>
+
+                    <button type="submit">Get Recommendation</button>
+                </form>
+                <div id="result" style="margin-top: 20px; font-weight: bold; color: #5c1f2d;"></div>
+            </section>
+
             <!-- About Me -->
             <section class="about-me">
                 <h2>About Me</h2>
@@ -217,5 +262,31 @@
             <p>© 2025 Crimson Dahlia. All rights reserved.</p>
         </footer>
     </div>
+
+    <script>
+        document.getElementById("braceletForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const color = document.getElementById("color").value;
+            const occasion = document.getElementById("occasion").value;
+
+            let recommendation = "Try one of our elegant signature pieces!";
+
+            if (color === "gold" && occasion === "formal") {
+                recommendation = "Golden Glamour – Perfect for your next formal event!";
+            } else if (color === "silver" && occasion === "casual") {
+                recommendation = "Silver Spark – Casual and chic!";
+            } else if (color === "earthy" && occasion === "gift") {
+                recommendation = "Earthbound Charm – A thoughtful and grounded gift.";
+            } else if (color === "gold" && occasion === "gift") {
+                recommendation = "Golden Heart – A stunning gift that shines with love.";
+            } else if (color === "earthy" && occasion === "casual") {
+                recommendation = "Rustic Bloom – Great for everyday wear with a natural flair!";
+            } else if (color === "silver" && occasion === "formal") {
+                recommendation = "Moonlit Elegance – A silver statement for formal nights.";
+            }
+
+            document.getElementById("result").textContent = recommendation;
+        });
+    </script>
 </body>
 </html>
