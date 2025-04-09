@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leila | Crimson Dahlia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@300;400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Ensure full height for the gradient */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Libre Baskerville', serif; /* Default body font */
+        }
+
+        /* Single container for the entire page */
+        .page-container {
+            background-color: white; /* Plain white background */
+            min-height: 100vh; /* Full viewport height, grows with content */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Header styling */
+        header {
+            color: #5c1f2d;
+            padding: 2rem;
+            text-align: center;
+            width: 100%;
+            font-family: 'Bodoni Moda', serif; /* Title font */
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin: 0;
+            font-weight: 300; /* Thinner weight */
+        }
+
+        /* Main content styling */
+        .content {
+            width: 100%;
+            max-width: 1200px; /* Limits content width */
+            padding: 2rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        /* Image section */
+        .image-section {
+            width: 50%;
+            padding: 1rem;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Description section */
+        .description-section {
+            width: 50%;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .description-section h2 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 2.5rem;
+            color: #a72a3a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 300; /* Thinner weight for h2 */
+        }
+
+        .description-section h3 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 1.8rem;
+            text-decoration: underline;
+            margin-bottom: 1rem;
+        }
+
+        .description-section p {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .description-section a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #a72a3a;
+        }
+
+        /* Back Button */
+        .back-button {
+            margin-top: 1rem;
+            padding: 1rem 2rem;
+            background-color: #a72a3a;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #871e2c;
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            padding: 2rem;
+            text-align: center;
+            color: #5c1f2d;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <h1>layan</h1>
+        </header>
+
+        <div class="content">
+            <!-- Image Section -->
+            <div class="image-section">
+                <img src="images/bracelet9.jpg">
+                <img src="images/bracelet9a.jpg">
+                <img src="images/bracelet9b.jpg">
+                <img src="images/bracelet9c.jpg">
+                <img src="images/bracelet9e.jpg">
+                <img src="images/bracelet9d.jpg">
+            </div>
+
+            <!-- Description Section -->
+            <div class="description-section">
+                <h2>Bracelet with gemstone and crystal beads</h2>
+                <h3>Description</h3>
+                <p>Layan is a handcrafted bracelet blending moonstone’s ethereal glow, sunstone’s peach radiance, and labradorite’s sparkling blue. Enhanced with Preciosa crystal bicone beads for extra shimmer, it’s woven with a stylish macrame cord and secured by a luminous white shell button. A delicate bead tail adds a graceful finish. Named Layan—Arabic for "softness"—it reflects the gentle harmony of sun and moon, shining with quiet brilliance.</p>
+            
+
+                <!-- Back Button -->
+                <button class="back-button" onclick="window.history.back();">Back</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Crimson Dahlia. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
