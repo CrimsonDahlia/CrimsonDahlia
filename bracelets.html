@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bracelets - Crimson Dahlia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Libre Baskerville', serif;
+    }
+
+    header {
+      background-color: #f1f1f1;
+      padding: 1rem;
+      text-align: center;
+      width: 100%;
+      font-family: 'Bodoni Moda', serif;
+      color: #5c1f2d;
+    }
+
+    .menu-bar {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-family: 'Bodoni Moda', serif;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .menu-bar a {
+      text-decoration: none;
+      color: #5c1f2d;
+      padding: 0.5rem 1rem;
+      transition: color 0.3s ease, border-bottom 0.3s ease;
+    }
+
+    .menu-bar a:hover {
+      color: #a72a3a;
+      border-bottom: 2px solid #a72a3a;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .bracelet-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+      padding: 2rem;
+    }
+
+    .bracelet-list div {
+      text-align: center;
+      width: 220px;
+    }
+
+    .bracelet-list img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .bracelet-list img:hover {
+      transform: scale(1.05);
+    }
+
+    .bracelet-list p {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #5c1f2d;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Beautiful Bracelets</h1>
+  </header>
+
+  <div class="menu-bar">
+    <a href="index.html">Home</a>
+    <a href="bracelets.html">Bracelets</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="bracelet-list">
+    <div>
+      <a href="Leila.html"><img src="images/bracelet1.jpg" alt="Leila Bracelet"></a>
+      <p>Leila</p>
+    </div>
+    <div>
+      <a href="layan.html"><img src="images/bracelet9.jpg" alt="Layan Bracelet"></a>
+      <p>Layan</p>
+    </div>
+    <!-- Add more bracelets here as needed -->
+  </div>
+
+</body>
+</html>
